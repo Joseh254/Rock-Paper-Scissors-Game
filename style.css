@@ -45,11 +45,14 @@ ul {
     align-items: center;
     justify-content: center;
     margin-top: 0;
+    padding: 0;
+    height: 25rem;
     
   }
   
   #computer{
     font-size: medium;
+    margin: 0;
   }
 
   #current_computer_hand{
@@ -61,16 +64,22 @@ ul {
     align-items: center;
     justify-content: center;
     padding-left: 3rem;
+    padding-top: -1rem;
   }
 
   #result{
     margin-left: 30rem;
     margin-right:30rem ;
     background-color: #a3d841;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(253, 178, 39);
+    font-size: small;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 5rem;
   }
 
   #result_heading{
-    
+    padding-left: 25rem;
   }
