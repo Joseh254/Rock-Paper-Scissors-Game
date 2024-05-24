@@ -5,6 +5,10 @@ body{
     
 
 }
+#game{
+    background-color:black;
+    
+}
 
 * {
     margin: 0;
