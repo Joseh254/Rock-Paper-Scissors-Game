@@ -6,6 +6,13 @@ body{
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 ul {
     list-style-type: none;
     margin-left: 30rem;
@@ -44,7 +51,7 @@ ul {
     background-color: #a3d841;
     align-items: center;
     justify-content: center;
-    margin-top: 0;
+    margin-top: -20px;
     padding: 0;
     height: 25rem;
     
@@ -53,6 +60,7 @@ ul {
   #computer{
     font-size: medium;
     margin: 0;
+    font-weight: 900;
   }
 
   #current_computer_hand{
@@ -63,8 +71,8 @@ ul {
     font-size: 7rem;
     align-items: center;
     justify-content: center;
-    padding-left: 3rem;
-    padding-top: -1rem;
+    padding-left: 2rem;
+    padding-top: 0.01rem;
   }
 
   #result{
@@ -75,29 +83,75 @@ ul {
     margin-bottom: 0px;
     background-color: rgb(253, 178, 39);
     font-size: 10px;
-    padding-top: 1rem;
+    padding-top: 0.006rem;
     padding-bottom: 1rem;
     height: 3rem;
   }
 
-  #result_heading{
-    padding-left: 25rem;
-  }
-  #player_section{
-    margin-left: 30rem;
-    margin-right:30rem;
-    background-color: #a3d841;
-    margin-top: 0;
-    padding-left: ;
+  #player{
+    font-size:medium;
+    font-size: medium;
+    margin: 0;
+    font-weight: 900;
   }
 
-  #current_player_hand{
+  #result_heading{
+    padding-left: 29rem;
+    font-weight: 900;
+  }
+
+  #player_section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rem;
+    margin-right:30rem ;
+    background-color: #a3d841;
+    align-items: center;
+    margin-top: 0;
+    padding: 0;
+    height: 25rem;
+    gap: 0px;
+  }
+
+ #current_players_hand{
     border: 2px dashed black;
     height: 10rem;
     width: 10rem;
     font-size: 7rem;
     align-items: center;
     justify-content: center;
-    padding-left: 3rem;
-    padding-top: -1rem;
-  }
+    padding-left: 2rem;
+    padding-top: 0.01rem;
+ }
+
+ #players{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    background-color: #a3d841;
+    margin-top: -29px;
+    margin-left: 30rem;
+    margin-right:30rem;
+    width: 57.5%;
+    border: none;
+    padding-bottom: 5rem;
+    
+ }
+
+ .p{
+
+    border: 2px dashed black;
+    height: 10rem;
+    width: 10rem;
+    font-size: 7rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 0.01rem;
+    font-size: 15px;
+    background-color: white;
+    margin-right: 4rem;
+ }
