@@ -96,7 +96,7 @@ ul {
   }
 
   #result_heading{
-    padding-left: 29rem;
+    padding-left: 37rem;
     font-weight: 900;
   }
 
@@ -138,6 +138,7 @@ ul {
     width: 57.5%;
     border: none;
     padding-bottom: 5rem;
+    font-size: larger;
     
  }
 
@@ -145,10 +146,8 @@ ul {
 
     border: 2px dashed black;
     height: 10rem;
-    width: 10rem;
-    font-size: 7rem;
-    align-items: center;
-    justify-content: center;
+    width: 15rem;
+    font-size: 10rem;
     padding-left: 2rem;
     padding-top: 0.01rem;
     font-size: 15px;
