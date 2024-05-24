@@ -1,15 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const choices = ["✊", "✋", "✌️"];
-    const results = {
-        "✊✊": "DRAW",
-        "✊✋": "LOSE",
-        "✊✌️": "WIN",
-        "✋✊": "WIN",
-        "✋✋": "DRAW",
-        "✋✌️": "LOSE",
-        "✌️✊": "LOSE",
-        "✌️✋": "WIN",
-        "✌️✌️": "DRAW",
+    const outcomes = {
+        "✊✌️": "player",
+        "✌️✋": "player",
+        "✋✊": "player",
+        "✌️✊": "computer",
+        "✋✌️": "computer",
+        "✊✋": "computer",
     };
 
     const computerHandEl = document.getElementById("current_computer_hand");
@@ -28,16 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function playGame(playerChoice) {
         const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-        const result = results[playerChoice + computerChoice];
-
         computerHandEl.textContent = computerChoice;
         playerHandEl.textContent = playerChoice;
-        resultHeadingEl.textContent = result;
 
-        if (result === "WIN") {
-            playerScore++;
-        } else if (result === "LOSE") {
-            computerScore++;
+        if (playerChoice === computerChoice) {
+            resultHeadingEl.textContent = "Draw";
+        } else {
+            const outcome = outcomes[playerChoice + computerChoice];
+            if (outcome === "player") {
+                resultHeadingEl.textContent = "Player wins";
+                playerScore++;
+            } else {
+                resultHeadingEl.textContent = "Computer wins";
+                computerScore++;
+            }
         }
 
         computerScoreEl.textContent = computerScore;
