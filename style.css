@@ -1,8 +1,6 @@
-html{font-size:62.5%}
-
+html{font-size:60.5%}
 body{
     font-family:sans-serif;
-    font-size:1.6rem;
     font-family:"Press Start 2P",sans-serif
     
 
@@ -16,6 +14,8 @@ ul {
     overflow: hidden;
     background-color: #a3d841;
     margin-bottom: 0;
+    font-size: small;
+    font-weight: 900;
     
   }
   
@@ -57,7 +57,7 @@ ul {
 
   #current_computer_hand{
 
-    border: 2px dotted black;
+    border: 2px dashed black;
     height: 10rem;
     width: 10rem;
     font-size: 7rem;
@@ -69,17 +69,35 @@ ul {
 
   #result{
     margin-left: 30rem;
-    margin-right:30rem ;
+    margin-right:30rem;
     background-color: #a3d841;
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: rgb(253, 178, 39);
-    font-size: small;
+    font-size: 10px;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    height: 5rem;
+    height: 3rem;
   }
 
   #result_heading{
     padding-left: 25rem;
+  }
+  #player_section{
+    margin-left: 30rem;
+    margin-right:30rem;
+    background-color: #a3d841;
+    margin-top: 0;
+    padding-left: ;
+  }
+
+  #current_player_hand{
+    border: 2px dashed black;
+    height: 10rem;
+    width: 10rem;
+    font-size: 7rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-top: -1rem;
   }
