@@ -4,16 +4,18 @@ body{
     font-family:sans-serif;
     font-size:1.6rem;
     font-family:"Press Start 2P",sans-serif
+    
 
 }
 
 ul {
     list-style-type: none;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
     padding: 0;
     overflow: hidden;
     background-color: #a3d841;
+    margin-bottom: 0;
     
   }
   
@@ -23,9 +25,52 @@ ul {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-transform: capitalize;
   }
   
   #navigation2{
     float: right;
   }
+
+  #my_name{
+    color: blue;
+  }
+
+  #computer_play{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rem;
+    margin-right:30rem ;
+    background-color: #a3d841;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    
+  }
   
+  #computer{
+    font-size: medium;
+  }
+
+  #current_computer_hand{
+
+    border: 2px dotted black;
+    height: 10rem;
+    width: 10rem;
+    font-size: 7rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+  }
+
+  #result{
+    margin-left: 30rem;
+    margin-right:30rem ;
+    background-color: #a3d841;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #result_heading{
+    
+  }
