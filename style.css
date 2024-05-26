@@ -106,7 +106,7 @@ li {
   width: 10rem;
   padding: 1rem;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1rem;
   background-color: white;
   text-align: center;
 }
@@ -116,12 +116,20 @@ li {
 
 @media (max-width: 768px) {
   ul {
-      flex-direction: column;
-      text-align: center;
+float: left;
   }
+
+  #navigation1{
+    float: left;
+  }
+
 
   #game{
     background-color: #a3d841;
+  }
+
+  #players{
+    font-size: 1rem;
   }
 
   li {
@@ -168,5 +176,13 @@ li {
 
   #result {
       font-size: 1rem;
+  }
+  .p{
+    
+      font-size: 1px;
+    
+  }
+  #players{
+    font-size: 1rem;
   }
 }
