@@ -1,397 +1,172 @@
-html{font-size:60.5%}
-body{
-    font-family:sans-serif;
-    font-family:"Press Start 2P",sans-serif
-    
-
+html {
+  font-size: 60.5%;
 }
-#game{
-    background-color:black;
-    
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  background-color: black;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-ul {
-    list-style-type: none;
-    margin-left: 30rem;
-    margin-right: 30rem;
-    padding: 0;
-    overflow: hidden;
-    background-color: #a3d841;
-    margin-bottom: 0;
-    font-size: small;
-    font-weight: 900;
-    
-  }
-  
-  li {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  
-  #navigation2{
-    float: right;
-  }
-
-  #my_name{
-    color: blue;
-  }
-
-  #computer_play{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30rem;
-    margin-right:30rem ;
-    background-color: #a3d841;
-    align-items: center;
-    justify-content: center;
-    margin-top: -20px;
-    padding: 0;
-    height: 25rem;
-    
-  }
-  
-  #computer{
-    font-size: medium;
-    margin: 0;
-    font-weight: 900;
-  }
-
-  #current_computer_hand{
-
-    border: 2px dashed black;
-    height: 10rem;
-    width: 10rem;
-    font-size: 7rem;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-top: 0.01rem;
-  }
-
-  #result{
-    margin-left: 30rem;
-    margin-right:30rem;
-    background-color: #a3d841;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: rgb(253, 178, 39);
-    font-size: 10px;
-    padding-top: 0.006rem;
-    padding-bottom: 1rem;
-    height: 3rem;
-  }
-
-  #player{
-    font-size:medium;
-    font-size: medium;
-    margin: 0;
-    font-weight: 900;
-  }
-
-  #result_heading{
-    padding-left: 37rem;
-    font-weight: 900;
-  }
-
-  #player_section{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30rem;
-    margin-right:30rem ;
-    background-color: #a3d841;
-    align-items: center;
-    margin-top: 0;
-    padding: 0;
-    height: 25rem;
-    gap: 0px;
-  }
-
- #current_players_hand{
-    border: 2px dashed black;
-    height: 10rem;
-    width: 10rem;
-    font-size: 7rem;
-    align-items: center;
-    justify-content: center;
-    padding-left: 2rem;
-    padding-top: 0.01rem;
- }
-
- #players{
-
-    display: flex;
-    flex-direction: row;
-    gap: 1px;
-    justify-content: center;
-    align-items: center;
-    background-color: #a3d841;
-    margin-top: -29px;
-    margin-left: 30rem;
-    margin-right:30rem;
-    width: 57.5%;
-    border: none;
-    padding-bottom: 5rem;
-    font-size: larger;
-    
- }
-
- .p{
-
-    border: 2px dashed black;
-    height: 10rem;
-    width: 15rem;
-    font-size: 10rem;
-    padding-left: 2rem;
-    padding-top: 0.01rem;
-    font-size: 15px;
-    background-color: white;
-    margin-right: 4rem;
-    
-
- }
-
-@media only screen and (min-width:1024px) {
-#game{
-  background-color: #a3d841;
-height: 140rem;
-
-}
- 
 ul {
   list-style-type: none;
-
   padding: 0;
-  margin: 0;
   background-color: #a3d841;
-  margin-bottom: 0;
   font-size: small;
   font-weight: 900;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 1rem;
+  flex-wrap: wrap;
 }
 
 li {
- 
-  display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   text-transform: capitalize;
 }
 
-
-
-#navigation_container{
-  width: 100%;
+#navigation2 {
+  display: flex;
+  gap: 1rem;
 }
 
-#my_name{
+#my_name {
   color: blue;
 }
 
-#computer_play{
+#computer_play, #player_section {
   display: flex;
   flex-direction: column;
-  
-  background-color: #a3d841;
   align-items: center;
-  justify-content: center;
-  margin-top: -20px;
-  padding: 0;
-
-  
+  background-color: #a3d841;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 100%;
 }
 
-#computer{
-  font-size: medium;
-  margin: 0;
+#computer, #player {
+  font-size: 1.6rem;
   font-weight: 900;
+  margin: 0.5rem 0;
 }
 
-#current_computer_hand{
-  
+#current_computer_hand, #current_players_hand, .p {
   border: 2px dashed black;
-  height: 19rem;
-  width: 19rem;
-  font-size: 7rem;
+  height: 10rem;
+  width: 10rem;
+  font-size: 3rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5rem;
-  padding-top: 5rem;
+  margin: 1rem 0;
 }
 
-#result{
-  background-color: #a3d841;
-  margin: 0;
+#result {
   background-color: rgb(253, 178, 39);
-  font-size: 10px;
-  padding-top: 0.006rem;
-  padding-bottom: 1rem;
-
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem 0;
+  width: 100%;
 }
 
-#player{
-  font-size:medium;
-  font-size: medium;
-  margin: 0;
+#result_heading {
   font-weight: 900;
 }
 
-#result_heading{
-  padding-left: 50rem;
-  font-weight: 900;
-  margin: 0;
-  width: 0;
-}
-
-#player_section{
+#players {
   display: flex;
-  flex-direction: column;
-
-  background-color: #a3d841;
-  align-items: center;
-  margin-top: 0;
-  padding: 0;
-  height: 25rem;
-  gap: 0px;
-}
-
-#current_players_hand{
-  border: 2px dashed black;
-  height: 19rem;
-  width: 19rem;
-  font-size: 7rem;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5rem;
-  padding-top: 5rem;
-  margin-top: 100px;
-  
-}
-
-#players{
-
-  display: flex;
-  flex-direction: row;
-  gap: 1px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #a3d841;
-  margin-top: 100px;
-  height: auto;
-  width: 57.5%;
+  width: 100%;
+  padding: 1rem;
   border: none;
-  padding-bottom: 5rem;
-  font-size: larger;
-  
 }
 
-.p{
-
-  border: 2px dashed black;
-  height: 19rem;
-  width: 19rem;
-  font-size: 10rem;
-  padding-left: 2rem;
-  padding-top: 0.01rem;
-  font-size: 15px;
+.p {
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
   background-color: white;
-  margin-right: 4rem;
-  
-
+  text-align: center;
 }
 
-}
+/* Media Queries for Responsiveness */
 
-/* *****************************************************************8 */
-@media only screen and (min-width:375px){
+
+@media (max-width: 768px) {
+  ul {
+      flex-direction: column;
+      text-align: center;
+  }
 
   #game{
-    width: 375px;
-    margin: 0;
     background-color: #a3d841;
-    scroll-behavior: smooth;
-    height: 667px;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
-  ul {
-    list-style-type: none;
-  
-    padding: 0;
-    margin: 0;
-    background-color: #a3d841;
-    margin-bottom: 0;
-    font-size: small;
-    font-weight: 900;
-    
-  }
-  
   li {
-   
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: capitalize;
+      padding: 10px;
   }
 
-  #navigation2{
-    float: left;
-  }
-  
-  #computer-play{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  #result_heading, #navigation1, #navigation2 {
+      padding-left: 0;
+      float: none;
   }
 
+  #current_computer_hand, #current_players_hand, .p {
+      height: 7rem;
+      width: 7rem;
+      font-size: 2rem;
+  }
 
-  #result{
+  #computer, #player {
+      font-size: 1.2rem;
+  }
+
+  #result {
+      font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  ul {
+      padding: 0 2rem;
+  }
+  #game{
     background-color: #a3d841;
-    margin-right: 38rem;
-    background-color: rgb(253, 178, 39);
-    font-size: 10px;
-    
-    padding-bottom: 1rem;
-  
   }
 
-  #result_heading{
-    padding-left: 0rem;
-    font-weight: 900;
-    margin: 0;
-    width: 0;
-    background-color: rgb(253, 178, 39);
+  #current_computer_hand, #current_players_hand, .p {
+      height: 10rem;
+      width: 10rem;
+      font-size: 3rem;
   }
 
-  .p{
+  #computer, #player {
+      font-size: 1rem;
+  }
 
-    border: 2px dashed black;
-    height: 10rem;
-    width: 16rem;
-    font-size: 10rem;
-    padding-left: 1rem;
-    padding-top: 0.01rem;
-    font-size: 15px;
-    background-color: white;
-    margin-right: 2rem;
-    
-  
+  #result {
+      font-size: 1rem;
   }
 }
