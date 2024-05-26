@@ -13,6 +13,7 @@ body {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
+  height: auto;
 }
 
 * {
@@ -35,6 +36,7 @@ ul {
 }
 
 li {
+  float: left;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
@@ -126,6 +128,7 @@ float: left;
 
   #game{
     background-color: #a3d841;
+    height: auto;
   }
 
   #players{
