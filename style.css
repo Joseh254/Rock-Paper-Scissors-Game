@@ -161,5 +161,153 @@ ul {
 
  }
 
+@media only screen and (min-width:1024px) {
+#game{
+  background-color: #a3d841;
+  height: 100%;
 
+}
  
+ul {
+  list-style-type: none;
+
+  padding: 0;
+  margin: 0;
+  background-color: #a3d841;
+  margin-bottom: 0;
+  font-size: small;
+  font-weight: 900;
+  
+}
+
+li {
+ 
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+
+#navigation_container{
+  width: 100%;
+}
+
+#my_name{
+  color: blue;
+}
+
+#computer_play{
+  display: flex;
+  flex-direction: column;
+ 
+  background-color: #a3d841;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  padding: 0;
+
+  
+}
+
+#computer{
+  font-size: medium;
+  margin: 0;
+  font-weight: 900;
+}
+
+#current_computer_hand{
+  
+  border: 2px dashed black;
+  height: 19rem;
+  width: 19rem;
+  font-size: 7rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+
+#result{
+  background-color: #a3d841;
+  margin: 0;
+  background-color: rgb(253, 178, 39);
+  font-size: 10px;
+  padding-top: 0.006rem;
+  padding-bottom: 1rem;
+
+}
+
+#player{
+  font-size:medium;
+  font-size: medium;
+  margin: 0;
+  font-weight: 900;
+}
+
+#result_heading{
+  padding-left: 50rem;
+  font-weight: 900;
+  margin: 0;
+  width: 0;
+}
+
+#player_section{
+  display: flex;
+  flex-direction: column;
+
+  background-color: #a3d841;
+  align-items: center;
+  margin-top: 0;
+  padding: 0;
+  height: 25rem;
+  gap: 0px;
+}
+
+#current_players_hand{
+  border: 2px dashed black;
+  height: 19rem;
+  width: 19rem;
+  font-size: 7rem;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-top: 5rem;
+  
+}
+
+#players{
+
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  justify-content: center;
+  align-items: center;
+  background-color: #a3d841;
+  margin-top: -29px;
+
+  width: 57.5%;
+  border: none;
+  padding-bottom: 5rem;
+  font-size: larger;
+  
+}
+
+.p{
+
+  border: 2px dashed black;
+  height: 19rem;
+  width: 19rem;
+  font-size: 10rem;
+  padding-left: 2rem;
+  padding-top: 0.01rem;
+  font-size: 15px;
+  background-color: white;
+  margin-right: 4rem;
+  
+
+}
+
+}
