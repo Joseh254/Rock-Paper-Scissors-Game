@@ -202,7 +202,7 @@ li {
 #computer_play{
   display: flex;
   flex-direction: column;
- 
+  
   background-color: #a3d841;
   align-items: center;
   justify-content: center;
@@ -310,5 +310,45 @@ li {
   
 
 }
+
+}
+
+/* *****************************************************************8 */
+@media only screen and (min-width:375px){
+
+  #game{
+    width: 375px;
+    margin: 0;
+    background-color: #a3d841;
+    scroll-behavior: smooth;
+    height: 667px;
+    position: fixed;
+  }
+
+  ul {
+    list-style-type: none;
+  
+    padding: 0;
+    margin: 0;
+    background-color: #a3d841;
+    margin-bottom: 0;
+    font-size: small;
+    font-weight: 900;
+    
+  }
+  
+  li {
+   
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  #navigation2{
+    float: left;
+  }
+  
 
 }
